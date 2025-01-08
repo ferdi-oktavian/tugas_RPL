@@ -24,7 +24,7 @@
 
   <div class="container">
     <h1>Konsultasi Dokter</h1>
-    <form action="konsultasi2.php" method="get">
+    <form action="konsultasi_selesai.php" method="get">
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
 
@@ -38,7 +38,7 @@
       </select>
 
       <label for="phone">Nomor Kontak:</label>
-      <input type="text" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required pattern="\d+" title="Hanya angka yang diperbolehkan">
+      <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
 
       <label for="address">Alamat:</label>
       <textarea id="address" name="address" placeholder="Masukkan alamat Anda" required></textarea>
@@ -46,7 +46,6 @@
       <label for="complaint">Keluhan:</label>
       <textarea id="complaint" name="complaint" placeholder="Masukkan keluhan Anda" required></textarea>
 
-      <!-- New Form for Specialist and Doctor -->
       <h2>Pemilihan Spesialis dan Dokter</h2>
       <label for="specialist">Spesialis:</label>
       <select id="specialist" name="specialist" required>
@@ -65,19 +64,11 @@
         <option value="dr4">Dr. Siska, Sp.KK</option>
       </select>
 
-      <!-- Jadwal Pengunjungan (Unified Date Input) -->
-      <h2>Jadwal Pengunjungan</h2>
       <label for="visit_date">Tanggal Pengunjungan:</label>
-      <input type="date" id="visit_date" name="visit_date" required min="" onchange="updateDateText()">
+      <input type="date" id="visit_date" name="visit_date" min="<?php echo date('Y-m-d'); ?>" required>
 
       <button type="submit">Lanjut</button>
     </form>
   </div>
-
-  <script>
-    // Set the min attribute for the date input to today's date
-    const today = new Date().toISOString().split('T')[0];
-    document.getElementById('visit_date').setAttribute('min', today);
-  </script>
 </body>
 </html>
