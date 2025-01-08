@@ -16,9 +16,9 @@
 <body>
   <!-- Navbar Start -->
   <nav class="navbar">
-    <a href="index.html" class="navbar-logo">Sahabat Kecantikan</a>
+    <a href="./user/index.php" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="index.php">Home</a>
+      <a href="./user/index.php">Home</a>
       <a href="konsultasi1.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
@@ -125,3 +125,4 @@
 
 </body>
 </html>
+tset pushasd
