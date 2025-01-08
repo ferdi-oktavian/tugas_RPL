@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Perawatan</title>
     <link rel="stylesheet" href="css/paket.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
         body {
