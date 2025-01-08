@@ -3,26 +3,26 @@
     --bg: #ffff;
     --primary-color: #2e7d32;
     --primary-hover: #1b5e20;
-  }
-  
-  * {
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Poppins", sans-serif;
-    background: url('img/test.jpg') no-repeat center center fixed;
+    background: url('test.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #010101;
-  }
-  
-  /* Navbar */
-  .navbar {
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,27 +33,28 @@
     left: 0;
     right: 0;
     z-index: 9999;
-  }
-  
-  .navbar .navbar-logo {
+    position: sticky;
+}
+
+.navbar .navbar-logo {
     font-size: 1.5rem;
     font-family: "merienda", cursive;
     font-weight: 700;
     color: var(--primary);
-  }
-  
-  .navbar .navbar-nav a {
+}
+
+.navbar .navbar-nav a {
     color: var(--primary);
     font-size: 1.2rem;
     display: inline-block;
     margin: 0 1rem;
-  }
-  
-  .navbar .navbar-nav a:hover {
+}
+
+.navbar .navbar-nav a:hover {
     color: rgb(140, 173, 155);
-  }
-  
-  .navbar .navbar-login a {
+}
+
+.navbar .navbar-login a {
     margin: 0;
     background-color: rgb(140, 173, 155);
     color: var(--primary);
@@ -62,46 +63,46 @@
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
-  
-  .navbar .navbar-login a:hover {
+}
+
+.navbar .navbar-login a:hover {
     color: var(--bg);
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 600px;
     margin: 50px auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     color: var(--primary-color);
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
     margin-top: 10px;
     display: block;
-  }
-  
-  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea, select, button {
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea, select, button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #d4d4d4;
     border-radius: 5px;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: vertical;
     height: 100px;
-  }
-  
-  button {
+}
+
+button {
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -109,9 +110,19 @@
     margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: var(--primary-hover);
-  }
-  
+}
+
+/* Unified Date Input */
+#visit_date {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    color: #010101;
+}
