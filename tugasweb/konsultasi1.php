@@ -23,13 +23,13 @@
   </nav>
 
   <div class="container">
-    <h1>Konsultasi Dokter</h1>
+    <h1>Konsultasi Dokter Kulit</h1>
     <form action="selesai.php" method="get">
       <label for="name">Nama:</label>
-      <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+      <input type="email" id="email" name="email" placeholder="Masukkan email aktif Anda" required>
 
       <label for="gender">Jenis Kelamin:</label>
       <select id="gender" name="gender" required>
@@ -38,13 +38,13 @@
       </select>
 
       <label for="phone">Nomor Kontak:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
+      <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon/WA Anda contoh: 081562395782" required>
 
       <label for="address">Alamat:</label>
-      <textarea id="address" name="address" placeholder="Masukkan alamat Anda" required></textarea>
+      <textarea id="address" name="address" placeholder="Masukkan alamat lengkap tempat tinggal Anda" required></textarea>
 
       <label for="complaint">Keluhan:</label>
-      <textarea id="complaint" name="complaint" placeholder="Masukkan keluhan Anda" required></textarea>
+      <textarea id="complaint" name="complaint" placeholder="Ceritakan masalah kulit Anda" required></textarea>
 
       <h2>Pemilihan Spesialis dan Dokter</h2>
       <label for="specialist">Spesialis:</label>

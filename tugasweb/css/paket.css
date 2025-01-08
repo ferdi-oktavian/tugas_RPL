@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-:root {
-  --primary: #010101;
-  --bg: #ffff;
-  --primary-color: #2e7d32;
-  --primary-hover: #1b5e20;
-}
-
-
 *{
   margin: 0;
   padding: 0;
@@ -145,14 +137,22 @@ body{
   background: rgb(140, 173, 155);
   color: #fff;
 }
+.basic .btn button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .premium ::selection,
 .premium .price-area,
 .premium .inner-area,
 .premium .btn button{
-  background: rgb(140, 173, 155);
+  background: rgb(140, 173, 156);
 }
 .premium .btn button:hover{
   background: rgb(140, 173, 155);
+}
+.premium .btn button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .ultimate ::selection,
 .ultimate .price-area,
@@ -168,6 +168,11 @@ body{
   background: rgb(140, 173, 155);
   color: #fff;
 }
+.ultimate .btn button:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .basic .package-name{
   background: rgb(140, 173, 155);
 }

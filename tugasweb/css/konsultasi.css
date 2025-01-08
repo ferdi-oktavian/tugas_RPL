@@ -15,14 +15,10 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    background: url('test.jpg') no-repeat;
+    font-family: "Poppins", sans-serif;
+    background: url('test.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
+    color: #010101;
 }
 
 /* Navbar */
