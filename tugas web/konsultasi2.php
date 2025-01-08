@@ -12,27 +12,18 @@
   <nav class="navbar">
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="index.html">Home</a>
-      <a href="konsultasi1.html">Konsultasi</a>
-      <a href="paket.html">Paket perawatan</a>
+      <a href="index.php">Home</a>
+      <a href="konsultasi1.php">Konsultasi</a>
+      <a href="paket.php">Paket perawatan</a>
     </div>
     <!-- Login -->
     <div class="navbar-login">
-      <a href="masuk.html">Login</a>
+      <a href="masuk.php">Login</a>
     </div>
   </nav>
   <div class="container">
     <h1>Konsultasi Dokter</h1>
-    <form action="selesai.html" method="post">
-      <label for="hospital">Klinik Sahabat Kecantikan Cabang</label>
-      <select id="hospital" name="hospital" required>
-        <option value="rs1">DKI Jakarta</option>
-        <option value="rs2">Jawa Tengah</option>
-        <option value="rs3">Jawa Tengah</option>
-        <option value="rs4">Bali</option>
-        <option value="rs4">Sumatera</option>
-      </select>
-
+    <form action="selesai.php" method="post">
       <label for="specialist">Spesialis:</label>
       <select id="specialist" name="specialist" required>
         <option value="internal">Chemical peeling</option>
