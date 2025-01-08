@@ -27,7 +27,7 @@
       <ul>
         <li><a href="AdminJadwal.php">Jadwal Konsultasi</a></li>
         <li><a href="#paket-perawatan">Paket Perawatan</a></li>
-        <li><a href="index.html">Logout</a></li>
+        <li><a href="./user/index.php">Logout</a></li>
       </ul>
     </div>
     <div class="content">

@@ -26,8 +26,8 @@
       <h2>Beranda Admin</h2>
       <ul>
         <li><a href="#jadwal-konsultasi">Jadwal Konsultasi</a></li>
-        <li><a href="AdminPaket.html">Paket Perawatan</a></li>
-        <li><a href="index.html">Logout</a></li>
+        <li><a href="AdminPaket.php">Paket Perawatan</a></li>
+        <li><a href="./user/index.php">Logout</a></li>
       </ul>
     </div>
     <div class="content">
