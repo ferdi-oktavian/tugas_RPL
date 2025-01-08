@@ -18,7 +18,7 @@
     </div>
     <!-- Login -->
     <div class="navbar-login">
-      <a href="masuk.html">Login</a>
+      <a href="masuk.php">Login</a>
     </div>
   </nav>
 
