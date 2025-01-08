@@ -1,0 +1,123 @@
+:root {
+  --primary: #010101;
+  --bg: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #010101;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #808080;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-family: "merienda", cursive;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: var(--primary);
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(140, 173, 155);
+}
+
+.navbar .navbar-login a {
+  margin: 0;
+  background-color: rgb(140, 173, 155);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-login a:hover {
+  color: var(--bg);
+}
+
+/* hero section */
+.container {
+  padding: 0;
+}
+
+.hero {
+  background: rgb(140, 173, 155);
+  color: var(--primary);
+  padding: 120px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom-right-radius: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Ukuran font heading */
+  margin: 0 0 20px; /* Jarak bawah heading */
+  line-height: 1.5;
+}
+
+.hero h1 span {
+  color: var(--bg);
+}
+
+.hero p {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.hero img {
+  width: 50vh;
+  height: 50vh;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.card h3 {
+  margin: 0 0 20px;
+  color: var(--primary);
+}
