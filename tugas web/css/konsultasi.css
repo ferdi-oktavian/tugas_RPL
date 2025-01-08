@@ -65,6 +65,12 @@ body {
   color: var(--bg);
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg);
+  color: var(--main-text-color);
+}
+
 .container {
   max-width: 600px;
   margin: 50px auto;
@@ -76,37 +82,35 @@ body {
 
 h1 {
   text-align: center;
-  color: #2e7d32;
-  font-weight: 600;
+  color: var(--primary-color);
 }
 
 label {
-  font-weight: 600;
+  font-weight: bold;
   margin-top: 10px;
   display: block;
 }
 
-input, textarea, select, button {
+select, button {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #d4d4d4;
   border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
 }
 
 button {
-  background-color: #2e7d32;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   cursor: pointer;
   margin-top: 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #1b5e20;
+  background-color: var(--primary-hover);
 }
+
 
