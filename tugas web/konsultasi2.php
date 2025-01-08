@@ -5,51 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konsultasi 2</title>
   <link rel="stylesheet" href="css/konsultasi.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap"rel="stylesheet">
-
-  <style>
-  body {
-      font-family: "Poppins", sans-serif;
-      background-color: var(--bg);
-      color: #010101;
-    }
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #2e7d32;
-    }
-    label {
-      font-weight: bold;
-      margin-top: 10px;
-      display: block;
-    }
-    select, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #d4d4d4;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #2e7d32;
-      color: white;
-      border: none;
-      cursor: pointer;
-      margin-top: 20px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    button:hover {
-      background-color: #1b5e20;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar Start -->
