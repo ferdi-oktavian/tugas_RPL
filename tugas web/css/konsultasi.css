@@ -64,11 +64,6 @@ body {
 .navbar .navbar-login a:hover {
   color: var(--bg);
 }
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--bg);
-  color: #010101;
-}
 
 .container {
   max-width: 600px;
