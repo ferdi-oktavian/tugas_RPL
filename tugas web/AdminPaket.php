@@ -25,7 +25,7 @@
       <nav></nav>
       <h2>Beranda Akun</h2>
       <ul>
-        <li><a href="AdminJadwal.html">Jadwal Konsultasi</a></li>
+        <li><a href="AdminJadwal.php">Jadwal Konsultasi</a></li>
         <li><a href="#paket-perawatan">Paket Perawatan</a></li>
         <li><a href="index.html">Logout</a></li>
       </ul>
