@@ -1,6 +1,6 @@
 <?php 
 $servername = "localhost";
-$database = "db_users";
+$database = "cantik";
 $username = "root";
 $password = "";
 
