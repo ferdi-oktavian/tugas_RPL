@@ -12,9 +12,9 @@
   <nav class="navbar">
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="index.html">Home</a>
-      <a href="konsultasi1.html">Konsultasi</a>
-      <a href="paket.html">Paket perawatan</a>
+      <a href="index.php">Home</a>
+      <a href="konsultasi1.php">Konsultasi</a>
+      <a href="paket.php">Paket perawatan</a>
     </div>
     <!-- Login -->
     <div class="navbar-login">
