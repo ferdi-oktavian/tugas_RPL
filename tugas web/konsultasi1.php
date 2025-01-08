@@ -24,7 +24,7 @@
 
   <div class="container">
     <h1>Konsultasi Dokter</h1>
-    <form action="konsultasi2.html" method="get">
+    <form action="konsultasi2.php" method="get">
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
 
