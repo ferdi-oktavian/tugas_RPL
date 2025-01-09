@@ -67,7 +67,6 @@ body {
 }
 
 /* Hero Section */
-
 .hero {
   background: rgb(140, 173, 155);
   color: var(--primary);
@@ -79,8 +78,8 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem; /* Ukuran font heading */
-  margin: 0 0 20px; /* Jarak bawah heading */
+  font-size: 2.5rem;
+  margin: 0 0 20px;
   line-height: 1.5;
 }
 
@@ -138,55 +137,58 @@ body {
   margin-bottom: 16px;
 }
 
-/* Container untuk artikel dengan scroll horizontal */
-.container {
-  display: flex; /* Menyusun card secara horizontal dalam satu baris */
-  overflow-x: auto; /* Menambahkan scrollbar horizontal jika konten melebihi lebar */
-  gap: 16px; /* Jarak antar card */
-  padding: 20px;
-  scroll-snap-type: x mandatory; /* Efek scroll-snap pada setiap card */
-}
-
-/* Menggunakan Flexbox untuk menampilkan card secara horizontal */
-.articles {
-  display: flex; /* Menyusun artikel secara horizontal */
-  gap: 20px; /* Menambahkan jarak antar card */
-  flex-wrap: wrap; /* Agar jika banyak card, mereka pindah ke baris berikutnya */
-  justify-content: flex-start; /* Menyusun dari kiri ke kanan */
+.articles .card-wrapper {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-wrap: wrap; /* Memungkinkan elemen untuk membungkus */
+  gap: 20px; /* Jarak antar-kartu */
+  justify-content: center; /* Distribusi kartu dengan rata */
   padding: 20px;
 }
 
-/* Penataan card artikel */
-.card {
-  width: 300px; /* Lebar card bisa disesuaikan */
+.articles .card {
+  flex: 1 1 calc(25% - 20px); /* Lebar maksimum 25% - gap */
+  max-width: calc(25% - 20px); /* Membatasi lebar ke 25% */
   background: white;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s;
-  flex-shrink: 0; /* Menghindari card mengecil */
-  margin-bottom: 20px; /* Memberikan jarak bawah antar card */
 }
 
-/* Efek hover pada card */
-.card:hover {
-  transform: scale(1.05); /* Efek zoom in saat hover */
-}
-
-.card img {
+.articles .card img {
   width: 100%;
-  height: 180px; /* Atur tinggi gambar agar sesuai */
+  height: 180px; /* Tinggi gambar */
   object-fit: cover;
 }
 
-.card h3 {
+.articles .card h3 {
   margin: 10px 0;
   color: var(--primary);
   font-size: 18px;
 }
 
-.card .category {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 16px;
+.articles .card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .articles .card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 kartu per baris */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .articles .card {
+    flex: 1 1 calc(50% - 20px); /* 2 kartu per baris */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .articles .card {
+    flex: 1 1 100%; /* 1 kartu per baris */
+    max-width: 100%;
+  }
 }
