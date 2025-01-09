@@ -66,10 +66,7 @@ body {
   color: var(--bg);
 }
 
-/* hero section */
-.container {
-  padding: 0;
-}
+/* Hero Section */
 
 .hero {
   background: rgb(140, 173, 155);
@@ -101,6 +98,7 @@ body {
   height: 50vh;
 }
 
+/* Content Section (card-based layout) */
 .content {
   display: flex;
   gap: 30px;
@@ -115,9 +113,80 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   flex: 1;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card h3 {
   margin: 0 0 20px;
   color: var(--primary);
+  font-size: 18px;
+}
+
+.card .category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+/* Container untuk artikel dengan scroll horizontal */
+.container {
+  display: flex; /* Menyusun card secara horizontal dalam satu baris */
+  overflow-x: auto; /* Menambahkan scrollbar horizontal jika konten melebihi lebar */
+  gap: 16px; /* Jarak antar card */
+  padding: 20px;
+  scroll-snap-type: x mandatory; /* Efek scroll-snap pada setiap card */
+}
+
+/* Menggunakan Flexbox untuk menampilkan card secara horizontal */
+.articles {
+  display: flex; /* Menyusun artikel secara horizontal */
+  gap: 20px; /* Menambahkan jarak antar card */
+  flex-wrap: wrap; /* Agar jika banyak card, mereka pindah ke baris berikutnya */
+  justify-content: flex-start; /* Menyusun dari kiri ke kanan */
+  padding: 20px;
+}
+
+/* Penataan card artikel */
+.card {
+  width: 300px; /* Lebar card bisa disesuaikan */
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  flex-shrink: 0; /* Menghindari card mengecil */
+  margin-bottom: 20px; /* Memberikan jarak bawah antar card */
+}
+
+/* Efek hover pada card */
+.card:hover {
+  transform: scale(1.05); /* Efek zoom in saat hover */
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* Atur tinggi gambar agar sesuai */
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.card .category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 16px;
 }
