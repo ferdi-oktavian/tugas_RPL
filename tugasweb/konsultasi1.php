@@ -12,7 +12,7 @@
   <nav class="navbar">
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="./user/index.php">Home</a>
+      <a href="index.php">Home</a>
       <a href="konsultasi.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
