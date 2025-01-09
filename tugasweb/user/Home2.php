@@ -11,7 +11,7 @@ $result = $conn->query($sql);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sahabat Sehat</title>
+    <title>Sahabat Sakit</title>
 
     <!-- Style -->
     <link rel="stylesheet" href="../css/style.css" />
