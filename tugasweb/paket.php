@@ -107,9 +107,9 @@
 <body>
   <!-- Navbar Start -->
   <nav class="navbar">
-    <a href="./user/index.php" class="navbar-logo">Sahabat Kecantikan</a>
+    <a href="index.php" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="./user/index.php">Home</a>
+      <a href="index.php">Home</a>
       <a href="konsultasi1.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
