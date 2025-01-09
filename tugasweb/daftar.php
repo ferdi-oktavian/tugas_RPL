@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <button type="submit" class="btn">Register</button>
             <div class="register-link">
-                <p>have an account ? <a href="masuk.html">Login</a></p>
+                <p>have an account ? <a href="masuk.php">Login</a></p>
             </div>
         </form>
     </div>    
