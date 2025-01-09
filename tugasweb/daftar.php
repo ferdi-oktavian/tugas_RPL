@@ -44,7 +44,7 @@ if (file_exists(__DIR__ . '/koneksi.php')) {
 } else {
   die("Error: 'koneksi.php' file not found. bingung gua anjing");
 }
-
+// tes
 $email = $_POST["email"];
 $username = $_POST["username"];
 $password = $_POST["password"];
