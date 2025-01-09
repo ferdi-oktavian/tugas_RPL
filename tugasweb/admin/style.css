@@ -1,0 +1,96 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: rgb(140, 173, 155); /* Sidebar color */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 10px;
+}
+
+.sidebar a.logout-link {
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.sidebar a.logout-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 10px;
+}
+
+.content {
+  margin-left: 250px; /* Menambah jarak antara sidebar dan konten */
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: rgb(
+    140,
+    173,
+    155
+  ); /* Warna header tabel sesuai dengan warna sidebar */
+  color: white; /* Menambahkan warna teks header tabel */
+}
+
+.btn {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  background: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
