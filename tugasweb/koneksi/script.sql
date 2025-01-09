@@ -128,5 +128,19 @@ ALTER TABLE `images`
 --
 ALTER TABLE `images`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+CREATE TABLE `isipaket` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`price` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`features` TEXT NOT NULL COLLATE 'utf8mb4_general_ci',
+	`rekomendasi` ENUM('Ya','Tidak') NOT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=4
+;
+
 COMMIT;
 

@@ -8,23 +8,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar Start -->
+  <!-- Navbar -->
   <nav class="navbar">
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
       <a href="./user/index.php">Home</a>
-      <a href="konsultasi1.php">Konsultasi</a>
+      <a href="konsultasi.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
-    <!-- Login -->
     <div class="navbar-login">
       <a href="masuk.php">Login</a>
     </div>
   </nav>
 
+  <!-- Form Konsultasi -->
   <div class="container">
     <h1>Konsultasi Dokter Kulit</h1>
-    <form action="selesai.php" method="get">
+    <form action="konsulkonek.php" method="POST">
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
 
@@ -59,7 +59,7 @@
       <label for="doctor">Dokter:</label>
       <select id="doctor" name="doctor" required>
         <option value="dr1">Dr. Willy, Sp.KK</option>
-        <option value="dr2">Dr. Richard Le, Sp,KK</option>
+        <option value="dr2">Dr. Richard Le, Sp.KK</option>
         <option value="dr3">Dr. Nur Putri Nuzul Iryani Sp.D.V.E</option>
         <option value="dr4">Dr. Siska, Sp.KK</option>
       </select>
@@ -72,3 +72,4 @@
   </div>
 </body>
 </html>
+
