@@ -1,12 +1,12 @@
 <?php
 // Database connection (replace with your own credentials)
-$servername = "localhost";  // Your database server
+$host = "localhost";  // Your database server
 $username = "root";         // Your database username
 $password = "";             // Your database password
-$dbname = "cantik";  // Your database name
+$database = "cantik";  // Your database name
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $database);
 
 // Check connection
 if ($conn->connect_error) {
