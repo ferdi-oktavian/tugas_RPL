@@ -1,5 +1,5 @@
 <?php
-include '../koneksi/koneksi.php';
+include 'koneksi/koneksi.php';
 
 // SQL query to get data from the images table
 $sql = "SELECT id, name, image FROM images";
@@ -14,7 +14,7 @@ $result = $conn->query($sql);
     <title>Sahabat Sehat</title>
 
     <!-- Style -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +45,7 @@ $result = $conn->query($sql);
     <!-- Hero Home Section Start-->
     <div>
       <section class="hero" id="home">
-        <img src="../img/img3.png" alt="Hero Image" />
+        <img src="img/img3.png" alt="Hero Image" />
         <div>
           <h1>Konsultasi <span>Kecantikan</span> Dengan Tepat Dan Akurat</h1>
           <p>
