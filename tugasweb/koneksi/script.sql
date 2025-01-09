@@ -85,6 +85,7 @@ CREATE TABLE treatments (
 CREATE TABLE users (
   id int NOT NULL,
   username varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  email varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
   password varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
   role enum('admin','user') COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'user',
   created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

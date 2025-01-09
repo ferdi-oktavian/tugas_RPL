@@ -35,18 +35,22 @@
         </a>
 
         <div class="register-link">
-          <p>Don't have an account ? <a href="daftar.html">Register</a></p>
+          <p>Belum Punya Akun?<a href="daftar.php">Daftar Disini!</a></p>
         </div>
       </form>
     </div>
   </body>
 </html>
 <?php 
-require 'koneksi.php';
+if (file_exists(__DIR__ . '/koneksi.php')) {
+  require __DIR__ . '/koneksi.php';
+} else {
+  die("Error: 'koneksi.php' file not found. bingung gua anjing");
+}
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$query_sql = "SELECT * FROM tbl_users
+$query_sql = "SELECT * FROM users
         WHERE username = '$username' AND password = '$password'";
 
 $result = mysqli_query($conn, $query_sql);

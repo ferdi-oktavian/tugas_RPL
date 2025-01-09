@@ -39,12 +39,17 @@
 </html>
 
 <?php
-require 'koneksi.php';
+if (file_exists(__DIR__ . '/koneksi.php')) {
+  require __DIR__ . '/koneksi.php';
+} else {
+  die("Error: 'koneksi.php' file not found. bingung gua anjing");
+}
+
 $email = $_POST["email"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$query_sql = "INSERT INTO tbl_users (email, username, password)
+$query_sql = "INSERT INTO users (email, username, password)
             VALUES ('$email', '$username', '$password')";
 
 if (mysqli_query($conn, $query_sql)) {

@@ -6,8 +6,8 @@
     <title>Akun</title>
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/tes.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/tes.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
