@@ -16,7 +16,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: url('test.jpg') no-repeat center center fixed;
+    background: url('../img/test.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #010101;
 }
