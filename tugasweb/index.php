@@ -99,21 +99,25 @@ $result = $conn->query($sql);
       <h2 style="text-align: center; margin-bottom: 30px;">Artikel Perawatan Kecantikan</h2>
       <!-- Menambahkan judul artikel yang berada di atas -->
       <section class="articles">
-        <!-- Menampilkan artikel -->
-        <?php
-        if ($result->num_rows > 0) {
-            // Output each image record
-            while($row = $result->fetch_assoc()) {
-                echo '<div class="card">';
-                echo '<img src="' . $row["image"] . '" alt="' . $row["name"] . '" />'; 
-                echo '<h3>' . $row["name"] . '</h3>';
-                echo '</div>';
-            }
-        } else {
-            echo "<p>No images found.</p>";
+  <div class="card-wrapper">
+    <?php
+    if ($result->num_rows > 0) {
+        // Output each image record
+        $counter = 0;
+        while($row = $result->fetch_assoc()) {
+            if ($counter == 10) break; // Stop after 4 items
+            echo '<div class="card">';
+            echo '<img src="' . $row["image"] . '" alt="' . $row["name"] . '" />'; 
+            echo '<h3>' . $row["name"] . '</h3>';
+            echo '</div>';
+            $counter++;
         }
-        ?>
-      </section>
+    } else {
+        echo "<p>No images found.</p>";
+    }
+    ?>
+  </div>
+</section>
     </div>
     <!-- Artikel Section End -->
   </body>
