@@ -1,5 +1,4 @@
 <?php
-// delete.php
 include '../../koneksi/koneksi.php';
 
 $id = $_GET['id'];
