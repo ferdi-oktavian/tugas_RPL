@@ -1,5 +1,4 @@
 <?php
-// index.php
 include '../sidebar.php';
 include '../../koneksi/koneksi.php';
 
