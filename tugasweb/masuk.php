@@ -34,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $error_message = "Username atau password salah.";
     }
-
     $stmt->close();
     $conn->close();
 }
