@@ -141,6 +141,24 @@ COLLATE='utf8mb4_general_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=4
 ;
+CREATE TABLE `konsultasi` (
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`email` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`gender` VARCHAR(10) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`phone` VARCHAR(20) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`address` TEXT NOT NULL COLLATE 'utf8mb4_general_ci',
+	`complaint` TEXT NOT NULL COLLATE 'utf8mb4_general_ci',
+	`specialist` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`doctor` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`visit_date` DATE NOT NULL,
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+;
+
 
 COMMIT;
 

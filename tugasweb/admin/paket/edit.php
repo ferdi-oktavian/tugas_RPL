@@ -1,5 +1,4 @@
 <?php
-// edit.php
 include '../../koneksi/koneksi.php';
 
 $id = $_GET['id'];
