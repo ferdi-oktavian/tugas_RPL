@@ -32,7 +32,7 @@ $result = $conn->query($sql);
       <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
       <div class="navbar-nav">
         <a href="Home2.php">Home</a>
-        <a href="konsultasi.php">Konsultasi</a>
+        <a href="konsultasi1.php">Konsultasi</a>
         <a href="paket.php">Paket perawatan</a>
       </div>
       <!-- Login -->
