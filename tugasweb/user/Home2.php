@@ -37,7 +37,7 @@ $result = $conn->query($sql);
       </div>
       <!-- Login -->
       <div class="navbar-login">
-        <a href="index.php">Logout</a>
+        <a href="../masuk.php">Logout</a>
       </div>
     </nav>
     <!-- Navbar End -->
