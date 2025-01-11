@@ -10,54 +10,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <style>
         body {
-            padding-top: 70px;
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-        }
+        padding-top: 70px;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
 
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-            gap: 20px;
-            padding: 20px 40px;
-            cursor: grab;
-        }
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 20px;
+        padding: 20px 40px;
+        cursor: grab;
+    }
 
-        .carousel:active {
-            cursor: grabbing;
-        }
+    .carousel:active {
+        cursor: grabbing;
+    }
 
-        .carousel::-webkit-scrollbar {
-            display: none;
-        }
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
 
-        .carousel .table {
-            flex: 0 0 auto;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            position: relative;
-        }
+    .carousel .table {
+        flex: 0 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        position: relative;
+    }
 
+    .price-section {
+        margin-bottom: 20px;
+    }
 
-        .price-section {
-            margin-bottom: 20px;
-        }
+    ul.features {
+        padding-left: 0;
+    }
 
-        ul.features {
-            padding-left: 0;
-        }
+    ul.features li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-        ul.features li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    .btn button {
+        background-color: #28a745; /* Warna hijau */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn button:hover {
+        background-color: #218838; /* Hijau lebih gelap saat hover */
+    }
     </style>
 </head>
 <body>
