@@ -1,8 +1,8 @@
 <?php
 include('koneksi/koneksi.php');
 
-$username = 'ferdy';
-$password = password_hash('ferdy123', PASSWORD_DEFAULT);
+$username = 'admin';
+$password = password_hash('123', PASSWORD_DEFAULT);
 $role = 'admin';
 
 $stmt = $conn->prepare("INSERT INTO users (username, password, role, created_at, updated_at) VALUES (?, ?, ?, NOW(), NOW())");
