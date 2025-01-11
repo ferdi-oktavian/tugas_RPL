@@ -5,7 +5,7 @@ include 'koneksi/koneksi.php';
 $sql = "SELECT id, name, image FROM images";
 $result = $conn->query($sql);
 ?>
-
+asdasdasd
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -127,3 +127,5 @@ $result = $conn->query($sql);
 // Close the database connection
 $conn->close();
 ?>
+
+<!-- willyyy cuts -->
