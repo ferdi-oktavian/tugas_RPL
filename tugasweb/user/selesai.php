@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konsultasi Selesai</title>
-  <link rel="stylesheet" href="css/konsultasi.css" />
+  <link rel="stylesheet" href="../css/konsultasi.css" />
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,14 +12,11 @@
   <nav class="navbar">
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
-      <a href="index.php">Home</a>
+      <a href="Home2.php">Home</a>
       <a href="konsultasi1.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
     <!-- Login -->
-    <div class="navbar-login">
-      <a href="masuk.php">Login</a>
-    </div>
   </nav>
   <div class="container">
     <h1>Terima Kasih!</h1>

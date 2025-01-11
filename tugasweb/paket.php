@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Perawatan</title>
-    <link rel="stylesheet" href="../css/paket.css">
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="css/paket.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <style>
@@ -66,11 +66,10 @@
     <a href="#" class="navbar-logo">Sahabat Kecantikan</a>
     <div class="navbar-nav">
       <a href="index.php">Home</a>
-      <a href="konsultasi1.php">Konsultasi</a>
       <a href="paket.php">Paket perawatan</a>
     </div>
     <div class="navbar-login">
-      <a href="../index.php">Logout</a>
+      <a href="masuk.php">Login</a>
     </div>
   </nav>
   
@@ -78,7 +77,7 @@
   <div class="carousel" id="carousel">
     <?php
     // Koneksi ke database
-    include '../koneksi/koneksi.php';
+    include 'koneksi/koneksi.php';
 
     // Periksa koneksi
     if ($conn->connect_error) {
@@ -113,7 +112,6 @@
             }
 
             echo "</ul>
-              <div class='btn'><button>Pesan</button></div>
             </div>";
         }
     } else {
