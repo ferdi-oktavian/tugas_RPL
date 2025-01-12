@@ -19,7 +19,10 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `cantik`
---
+--CREATE DATABASE IF NOT EXISTS cantik;
+USE cantik;
+-- Setting database collation
+ALTER DATABASE cantik CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
