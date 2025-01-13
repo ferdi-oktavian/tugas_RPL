@@ -70,7 +70,7 @@ CREATE TABLE `images` (
 
 INSERT INTO `images` (`id`, `name`, `image`, `url`) VALUES
 (4, 'asd', 'img/CheckTicket.png', NULL),
-(5, 'aas', 'img/BookTicket.png', 'https://www.alodokter.com/tag/kecantikan');
+(5, 'aas', 'pentingnya-skincare-pria-dan-pilihan-produk-yang-bisa-digunakan-0-alodokter.jpg', 'https://www.alodokter.com/tag/kecantikan');
 
 -- --------------------------------------------------------
 
@@ -171,9 +171,12 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Indexes for dumped tables
+--isi
 --
-
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'admin@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'admin', NOW(), NOW()),
+(2, 'user1', 'user1@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'user', NOW(), NOW()),
+(3, 'user2', 'user2@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'user', NOW(), NOW());
 --
 -- Indexes for table `images`
 --
