@@ -10,6 +10,7 @@ $allowed_types = ['jpg', 'jpeg', 'png', 'gif']; // Allowed file extensions
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
+    $url = $_POST['url']; // Get the URL input
     $image = $row['image']; // Default to current image
 
     if (!empty($_FILES['image']['name'])) {
@@ -36,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Update the database with the new data
-    $sql = "UPDATE images SET name = '$name', image = '$image' WHERE id = $id";
+    // Update the database with the new data (including URL)
+    $sql = "UPDATE images SET name = '$name', image = '$image', url = '$url' WHERE id = $id";
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");
     } else {
@@ -60,10 +61,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form action="" method="POST" enctype="multipart/form-data">
             <label for="name">Judul Artikel</label>
             <input type="text" id="name" name="name" value="<?= $row['name'] ?>" required>
+            
+            <label for="url">URL Artikel</label>
+            <input type="text" id="url" name="url" value="<?= $row['url'] ?>" required>
+            
             <label for="image">Gambar</label>
             <input type="file" id="image" name="image">
+            
             <button type="submit" class="btn">Simpan</button>
         </form>
     </div>
 </body>
 </html>
+
+<?php
+// Close the database connection
+$conn->close();
+?>

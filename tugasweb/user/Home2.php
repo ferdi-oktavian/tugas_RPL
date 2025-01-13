@@ -2,10 +2,9 @@
 include '../koneksi/koneksi.php';
 
 // SQL query to get data from the images table
-$sql = "SELECT id, name, image FROM images";
+$sql = "SELECT id, name, image, url FROM images"; // Tambahkan kolom 'url'
 $result = $conn->query($sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -99,25 +98,27 @@ $result = $conn->query($sql);
       <h2 style="text-align: center; margin-bottom: 30px;">Artikel Perawatan Kecantikan</h2>
       <!-- Menambahkan judul artikel yang berada di atas -->
       <section class="articles">
-  <div class="card-wrapper">
-    <?php
-    if ($result->num_rows > 0) {
-        // Output each image record
-        $counter = 0;
-        while($row = $result->fetch_assoc()) {
-            if ($counter == 10) break; // Stop after 4 items
-            echo '<div class="card">';
-            echo '<img src="../' . $row["image"] . '" alt="' . $row["name"] . '" />'; 
-            echo '<h3>' . $row["name"] . '</h3>';
-            echo '</div>';
-            $counter++;
-        }
-    } else {
-        echo "<p>No images found.</p>";
-    }
-    ?>
-  </div>
-</section>
+        <div class="card-wrapper">
+          <?php
+          if ($result->num_rows > 0) {
+              // Output each image record
+              $counter = 0;
+              while ($row = $result->fetch_assoc()) {
+                  if ($counter == 10) break; // Stop after 10 items
+                  echo '<div class="card">';
+                  echo '<a href="' . htmlspecialchars($row["url"]) . '" target="_blank" rel="noopener noreferrer">'; // Link ke URL
+                  echo '<img src="../' . htmlspecialchars($row["image"]) . '" alt="' . htmlspecialchars($row["name"]) . '" />';
+                  echo '<h3>' . htmlspecialchars($row["name"]) . '</h3>';
+                  echo '</a>'; // Penutup link
+                  echo '</div>';
+                  $counter++;
+              }
+          } else {
+              echo "<p>No articles found.</p>";
+          }
+          ?>
+        </div>
+      </section>
     </div>
     <!-- Artikel Section End -->
   </body>
@@ -127,3 +128,4 @@ $result = $conn->query($sql);
 // Close the database connection
 $conn->close();
 ?>
+
