@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2025 at 02:28 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: Jan 13, 2025 at 01:55 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -58,16 +58,17 @@ CREATE TABLE `home_content` (
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL
+  `image` varchar(255) NOT NULL,
+  `url` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `images`
 --
 
-INSERT INTO `images` (`id`, `name`, `image`) VALUES
-(2, 'qweqweqwe', 'weq'),
-(3, 'dsfgkjbsdg', 'sodjfbnnsdgf');
+INSERT INTO `images` (`id`, `name`, `image`, `url`) VALUES
+(4, 'asd', 'img/CheckTicket.png', NULL),
+(5, 'aas', 'img/BookTicket.png', 'https://www.alodokter.com/tag/kecantikan');
 
 -- --------------------------------------------------------
 
@@ -90,7 +91,7 @@ CREATE TABLE `isipaket` (
 --
 
 CREATE TABLE `konsultasi` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `gender` varchar(10) NOT NULL,
@@ -100,15 +101,8 @@ CREATE TABLE `konsultasi` (
   `specialist` varchar(50) NOT NULL,
   `doctor` varchar(50) NOT NULL,
   `visit_date` date NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `konsultasi`
---
-
-INSERT INTO `konsultasi` (`id`, `name`, `email`, `gender`, `phone`, `address`, `complaint`, `specialist`, `doctor`, `visit_date`, `created_at`) VALUES
-(1, 'ferdy', 'labex@example.com', 'pria', '89515996126', 'adaf', 'asdfas', 'internal', 'dr1', '2025-01-24', '2025-01-10 05:52:40');
 
 -- --------------------------------------------------------
 
@@ -175,16 +169,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `created_at`, `updated_at`) VALUES
-(0, 'ferdy', '', '$2y$10$UQ2UJ2QHPx1TcrQGuqa9v..Fn8mc0.AvX9IKNpdYjAscE5oU6gJPi', 'admin', '2025-01-09 17:26:45', '2025-01-09 17:26:45'),
-(0, 'ayam', 'ayam@email.com', '$2y$10$kPYBkg1g81GDo7FyMbO4Z.4PVLYNvB4lx5kQisvMYtrKFJ2kfXyim', 'user', '2025-01-10 05:56:59', '2025-01-10 05:56:59'),
-(0, 'admin', 'admin@email.com', '1234', 'admin', '2025-01-11 15:42:22', '2025-01-11 15:42:22'),
-(0, 'tes', 'tes@email.com', '$2y$10$f7GHAbPsZOiCSp3IJWQ/7etiPELFL.Q.0syXHbk6QtwbQaEDZeoR6', 'user', '2025-01-12 13:27:14', '2025-01-12 13:27:14');
-
---
 -- Indexes for dumped tables
 --
 
@@ -204,7 +188,7 @@ ALTER TABLE `isipaket`
 -- Indexes for table `konsultasi`
 --
 ALTER TABLE `konsultasi`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -214,7 +198,7 @@ ALTER TABLE `konsultasi`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `isipaket`
@@ -226,7 +210,7 @@ ALTER TABLE `isipaket`
 -- AUTO_INCREMENT for table `konsultasi`
 --
 ALTER TABLE `konsultasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
