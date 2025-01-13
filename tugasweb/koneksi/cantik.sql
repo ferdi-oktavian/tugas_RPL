@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `cantik`
 --
-CREATE cantik IF NOT EXISTS;
+CREATE DATABASE IF NOT EXISTS cantik;
 USE cantik;
 -- --------------------------------------------------------
 
