@@ -247,3 +247,49 @@ body{
   text-transform: uppercase;
   box-shadow: 0 5px 10px rgba(0,0,0,0.12);
 }
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 40px;
+  cursor: grab;
+  
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .table {
+  flex: 0 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  background-color: rgb(129, 213, 202);
+}
+
+
+.price-section {
+  margin-bottom: 20px;
+}
+
+ul.features {
+  padding-left: 0;
+}
+
+ul.features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
