@@ -174,9 +174,9 @@ CREATE TABLE `users` (
 --isi
 --
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'admin', NOW(), NOW()),
-(2, 'user1', 'user1@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'user', NOW(), NOW()),
-(3, 'user2', 'user2@example.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHeFupQeX9Y0eG7aT1z9e1e1e1e1e1e1e1', 'user', NOW(), NOW());
+(1, 'admin', 'admin@example.com', '$2y$10$wH8QeX9Y0eG7aT1z9e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1', 'admin', NOW(), NOW()),
+(2, 'user1', 'user1@example.com', '$2y$10$wH8QeX9Y0eG7aT1z9e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1', 'user', NOW(), NOW()),
+(3, 'user2', 'user2@example.com', '$2y$10$wH8QeX9Y0eG7aT1z9e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1', 'user', NOW(), NOW());
 --
 -- Indexes for table `images`
 --
