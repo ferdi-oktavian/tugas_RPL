@@ -134,7 +134,7 @@ $result = $conn->query($sql);
     </a>
   </div>
   <p>
-    &copy; 2025 Sahabat Sehat. All Rights Reserved. | 
+    &copy; 2025 Sahabat Cantik. All Rights Reserved. | 
     <a href="privacy-policy.html">Privacy Policy</a> | 
     <a href="terms.html">Terms of Service</a>
   </p>
