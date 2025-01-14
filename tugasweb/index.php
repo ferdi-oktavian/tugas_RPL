@@ -120,6 +120,26 @@ $result = $conn->query($sql);
       </section>
     </div>
     <!-- Artikel Section End -->
+     <!-- Footer Section -->
+<footer>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <iconify-icon icon="mdi:facebook" width="24" height="24"></iconify-icon>
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <iconify-icon icon="mdi:twitter" width="24" height="24"></iconify-icon>
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon>
+    </a>
+  </div>
+  <p>
+    &copy; 2025 Sahabat Sehat. All Rights Reserved. | 
+    <a href="privacy-policy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms of Service</a>
+  </p>
+</footer>
+
   </body>
 </html>
 
