@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `account`
 --
+create database if not exists cantik (1);
+use cantik (1);
 
 CREATE TABLE `account` (
   `id` int(11) NOT NULL,
