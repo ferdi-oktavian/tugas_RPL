@@ -26,6 +26,7 @@ $result = $conn->query($sql);
                     <th>Harga</th>
                     <th>Fitur</th>
                     <th>Rekomendasi</th>
+                    <th>Gambar</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -39,6 +40,7 @@ $result = $conn->query($sql);
             echo "<td>" . $row['price'] . "</td>";
             echo "<td>" . $row['features'] . "</td>";
             echo "<td>" . $row['rekomendasi'] . "</td>";
+            echo "<td><img src='../../uploads/" . $row['images'] . "' alt='Gambar Paket' width='100'></td>";
             echo "<td>
                 <a href='edit.php?id=" . $row['id'] . "' class='btn'>Edit</a>
                 <a href='delete.php?id=" . $row['id'] . "' class='btn btn-danger'>Hapus</a>
@@ -46,7 +48,7 @@ $result = $conn->query($sql);
             echo "</tr>";
         }
     } else {
-        echo "<tr><td colspan='6'>Tidak ada paket ditemukan</td></tr>";
+        echo "<tr><td colspan='7'>Tidak ada paket ditemukan</td></tr>";
     }
     ?>
             </tbody>
